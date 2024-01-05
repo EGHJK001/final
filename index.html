@@ -5,40 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e化系統</title>
-
-    <style type="text/css">
-        a[id="EndView"],
-        a[id="ActView"],
-        a[id="PLView"],
-        a[id="EQView"] {
-            font-family: "Taviraj", serif;
-            font-size: 15px;
-            color: #365D98;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            -ms-appearance: none;
-            appearance: none;
-            -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-            -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-            -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-            border-radius: 4px;
-            border: 0;
-            cursor: pointer;
-            display: inline-block;
-            font-weight: 400;
-            height: 2.35rem;
-            line-height: 2.45rem;
-            padding: 0 1.5rem;
-            text-align: center;
-            text-decoration: none;
-            white-space: nowrap;
-            text-transform: uppercase;
-            border: 1px solid #DDDDDD;
-            background-color: #DDDDDD;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/index.css">
     <script language="javascript" type="text/javascript">
         <!-- -->
     </script>
@@ -57,34 +24,36 @@
             <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
                 value="/wEdAATYXrskiHA4WtoEClexWQ6JLiQ8LIJhZru8UW8GbRQswMLxH0OOM+8r4sC9nXug/yPE4QaA3nzH6Y5iPnzUbEGLALlkBQjNjj4k81wfT9L6QAKvfqy+NsSPXjX3CvxYmSk=" />
         </div>
-        <div align="center">
-            <img src="img/index_01.gif"></img>
+        <div id="center">
+            <img src="img/index_01.gif" alt=""></img>
             <hr>
             <span id="labMsg" style="color:Red;"></span>
-            <table align="center">
-                <tr>
-                    <td width=85>請輸入帳號</td>
-                    <td><input name="LogAccnt" type="text" id="LogAccnt" style="width:141px;" /></td>
-                </tr>
-                <tr>
-                    <td width=85>請輸入密碼</td>
-                    <td><input name="LogMir" type="password" id="LogMir" style="width:141px;" /></td>
-                </tr>
+            <table id="center">
+                <th>
+                    <tr>
+                        <td style="width:85">請輸入帳號</td>
+                        <td><input name="LogAccnt" type="text" id="LogAccnt" style="width:141px" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 85">請輸入密碼</td>
+                        <td><input name="LogMir" type="password" id="LogMir" style="width:141px" /></td>
+                    </tr>
+                </th>
             </table>
             <tr>
                 <td>&nbsp;</td>
-                <td width="34%">
-                    <div align="center">
-                        <input type="image" name="submit" id="submit" src="img/yes.jpg" style="border-width:0px;" />
+                <td style="width:34%">
+                    <div id="center">
+                        <input type="image" name="submit" id="submit" src="img/yes.jpg" style="border-width:0px"
+                            alt="登入">
                     </div>
                 </td>
 
             </tr><br></br>
-            <tr><a href='webActEnd.aspx' id='EndView' style=''>社團活動成果查詢</a></tr>　　<a href='webAct.aspx' id='ActView'
-                style=''>社團活動行事曆查詢</a>
+            <tr><a href='webActEnd.aspx' id='EndView'>社團活動成果查詢</a></tr><a href='webAct.aspx' id='ActView'>社團活動行事曆查詢</a>
             <br></br>
-            <tr><a href='WebPL.aspx' id='PLView' style=''>場地借用狀況</a></tr>
-            <tr>　　<a href='WebEQ.aspx' id='EQView' style=''>器材借用狀況</a></tr>
+            <tr><a href='WebPL.aspx' id='PLView'>場地借用狀況</a></tr>
+            <tr><a href='WebEQ.aspx' id='EQView'>器材借用狀況</a></tr>
         </div>
     </form>
 </body>
