@@ -1,0 +1,54 @@
+// Importing reset css
+@import '../bootstrap-5.3.2/scss/bootstrap-reboot.scss';
+@import '../bootstrap-5.3.2/scss/bootstrap-grid.scss';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    z-index: 1000;
+
+    .brand {
+        font-size: 24px;
+    }
+
+    .navbar-list {
+        display: flex;
+        list-style: none;
+    }
+
+    .list-item {
+        padding: 1rem;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+
+        &:hover,
+        &.active {
+            color: orange;
+        }
+    }
+
+    // .d-flex {
+    //     display: flex;
+    // }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}

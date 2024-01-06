@@ -1,17 +1,11 @@
-a[id="EndView"],
-        a[id="ActView"],
-        a[id="PLView"],
-        a[id="EQView"] {
+#EndView,
+#ActView,
+#PLView,
+#EQView {
             font-family: "Taviraj", serif;
             font-size: 15px;
             color: #365D98;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            -ms-appearance: none;
             appearance: none;
-            -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-            -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-            -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
             transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
             border-radius: 4px;
             border: 0;
@@ -28,3 +22,7 @@ a[id="EndView"],
             border: 1px solid #DDDDDD;
             background-color: #DDDDDD;
         }
+body{
+    display: flex;
+    justify-content: center;
+}

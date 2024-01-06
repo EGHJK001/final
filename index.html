@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e化系統</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.css">
     <script language="javascript" type="text/javascript">
         <!-- -->
     </script>
@@ -24,37 +24,34 @@
             <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
                 value="/wEdAATYXrskiHA4WtoEClexWQ6JLiQ8LIJhZru8UW8GbRQswMLxH0OOM+8r4sC9nXug/yPE4QaA3nzH6Y5iPnzUbEGLALlkBQjNjj4k81wfT9L6QAKvfqy+NsSPXjX3CvxYmSk=" />
         </div>
-        <div id="center">
+        <div class="container">
             <img src="img/index_01.gif" alt=""></img>
-            <hr>
-            <span id="labMsg" style="color:Red;"></span>
-            <table id="center">
-                <th>
-                    <tr>
-                        <td style="width:85">請輸入帳號</td>
-                        <td><input name="LogAccnt" type="text" id="LogAccnt" style="width:141px" /></td>
-                    </tr>
-                    <tr>
-                        <td style="width: 85">請輸入密碼</td>
-                        <td><input name="LogMir" type="password" id="LogMir" style="width:141px" /></td>
-                    </tr>
-                </th>
-            </table>
-            <tr>
-                <td>&nbsp;</td>
-                <td style="width:34%">
-                    <div id="center">
-                        <input type="image" name="submit" id="submit" src="img/yes.jpg" style="border-width:0px"
-                            alt="登入">
-                    </div>
-                </td>
-
-            </tr><br></br>
-            <tr><a href='webActEnd.aspx' id='EndView'>社團活動成果查詢</a></tr><a href='webAct.aspx' id='ActView'>社團活動行事曆查詢</a>
-            <br></br>
-            <tr><a href='WebPL.aspx' id='PLView'>場地借用狀況</a></tr>
-            <tr><a href='WebEQ.aspx' id='EQView'>器材借用狀況</a></tr>
         </div>
+        <header>
+            <div class="container p-relative">
+                <div class="row">
+                    <div class="col-md-5" style="display:flex; align-items: center;">
+                        <div class="header-content">
+                            <p>請輸入帳號</p>
+                            <input name="LogAccnt" type="text" id="LogAccnt" style="width:141px" />
+                            <p>請輸入密碼</p>
+                            <input name="LogMir" type="password" id="LogMir" style="width:141px" />
+                            <div id="center">
+                                <input type="image" name="submit" id="submit" src="img/yes.jpg" style="border-width:0px"
+                                    alt="登入">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 offset-1">
+                        <a href="#" id="EndView">社團活動成果查詢</a>
+                        <a href="#" id="ActView">社團活動行事曆查詢</a>
+                        <br></br>
+                        <a href="#" id="PLView">場地借用狀況</a>
+                        <a href="#" id="EQView">器材借用狀況</a>
+                    </div>
+                </div>
+            </div>
+        </header>
     </form>
 </body>
 
