@@ -1,0 +1,84 @@
+@import '../bootstrap-4.0.0/scss/bootstrap-reboot.scss';
+@import '../bootstrap-4.0.0/scss/bootstrap-grid.scss';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EFED;
+    color: #894819;
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #F7EFED;
+    color: #894819;
+    padding: 10px;
+    text-align: center;
+    border-left: 1px solid #9B4722;
+    border-right: 1px solid #9B4722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9B4722;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+
+nav.row {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        margin: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+    }
+}
+
+section.row {
+    margin: 20px 0;
+
+    h2 {
+        color: #3498db;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+ul,
+li {
+    font-family: '微軟正黑體', Times, serif;
+    list-style: none;
+}
+
+section {
+    border-left: 1px solid #9B4722;
+    border-right: 1px solid #9B4722;
+}
