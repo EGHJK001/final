@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e化系統</title>
     <link rel="stylesheet" href="css/all.css">
+
+    <style>
+        /* Add responsive styles here */
+        @media only screen and (max-width: 768px) {
+            .navbar-list {
+                display: none;
+            }
+
+            .navbar {
+                text-align: center;
+            }
+
+            .brand {
+                margin-bottom: 10px;
+            }
+
+            .header-content {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -14,36 +35,34 @@
             <div class="justify-content-between align-items-center" style="display: flex;">
                 <div class="brand">社團活動系統</div>
                 <ul class="navbar-list">
-                    <li><a href="#" class="list-item">About</a></li>
-                    <li><a href="#" class="list-item">Skill</a></li>
-                    <li><a href="#" class="list-item">Contact</a></li>
+                    <li><a href="#" id="EndView">社團活動成果查詢</a></li>
+                    <li><a href="#" id="ActView">社團活動行事曆查詢</a></li>
+                    <li><a href="#" id="PLView">場地借用狀況</a></li>
+                    <li><a href="#" id="EQView">器材借用狀況</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header>
         <div class="container p-relative">
-            <img src="img/index_01.gif" alt="" class="p-absolute" style="left:45px; top: 0px; z-index: -1;">
-            <img src="img/index_01.gif" alt="" class="p-absolute" style="left:360px; top: 340px; z-index: -1">
-            <div class="row">
+            <div class="row" style="height: 1000px;">
                 <div class="col-md-5" style="display:flex; align-items: center;">
                     <div class="header-content">
-                        <p>請輸入帳號</p>
-                        <input name="LogAccnt" type="text" id="LogAccnt" style="width:141px" />
-                        <p>請輸入密碼</p>
-                        <input name="LogMir" type="password" id="LogMir" style="width:141px" />
-                        <div id="center">
-                            <input type="image" name="submit" id="submit" src="img/yes.jpg" style="border-width:0px"
-                                alt="登入">
-                        </div>
+                        <h1>請輸入帳號：</h1>
+                        <input name="LogAccnt" type="text" id="LogAccnt" style="width: 200px;" />
+                        <h1>請輸入密碼：</h1>
+                        <input name="LogMir" type="password" id="LogMir" style="width: 200px;" />
+                        <br><br>
+                        <input type="image" name="submit" id="submit" src="img/yes.jpg" style="border-width:0px"
+                            alt="登入">
                     </div>
                 </div>
-                <div class="col-md-5 offset-1">
-                    <a href="#" id="EndView">社團活動成果查詢</a>
-                    <a href="#" id="ActView">社團活動行事曆查詢</a>
-                    <br></br>
-                    <a href="#" id="PLView">場地借用狀況</a>
-                    <a href="#" id="EQView">器材借用狀況</a>
+                <div class="col-md-5" style=" display:flex; align-items: center;">
+                    <div>
+                        <img src="img/index_01.gif" alt="">
+                    </div>
+
+
                 </div>
             </div>
         </div>
